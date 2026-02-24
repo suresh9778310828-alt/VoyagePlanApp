@@ -1,0 +1,19 @@
+CREATE DATABASE travel_db;
+USE travel_db;
+
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(50) UNIQUE NOT NULL,
+    password VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE itinerary (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    city VARCHAR(100),
+    days INT,
+    budget DOUBLE,
+    checklist TEXT
+);
+select * from users;
+drop table users;
+select * from itinerary;
